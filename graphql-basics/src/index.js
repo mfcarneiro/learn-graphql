@@ -1,7 +1,8 @@
-import { GraphQLServer } from "graphql-yoga";
+import { GraphQLServer, PubSub } from "graphql-yoga";
 import database from "./dummyDb";
 import Query from "./resolvers/Query";
 import Mutations from "./resolvers/Mutations";
+import Subscriptions from "./resolvers/Subscriptions";
 import Post from "./resolvers/Post";
 import Comment from "./resolvers/Comment";
 import User from "./resolvers/User";
@@ -13,15 +14,19 @@ const server = new GraphQLServer({
     Mutations,
     Post,
     Comment,
-    User
+    User,
+    Subscriptions
   },
   context: {
     //* The place to propagate the context for resolvers
     //! Database
     //! Authorizations and so on
-    database
+    database,
+    pubSub
   }
 });
+
+const pubSub = new PubSub();
 
 server.start(() => {
   console.log("Server running at localhost:4000");
