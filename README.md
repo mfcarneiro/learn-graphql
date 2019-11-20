@@ -5,9 +5,10 @@
 - [x] GraphQL basics with Query and Mutations
   - [x] Architecture
     - [x] Project structure
--  [ ] Subscriptions
+- [X] Subscriptions
 - [ ] Pagination and sorting
-- [ ] Apollo Client and Testing
+- [X] Apollo Client
+- [ ] Testing with Jest
 - [ ] Authentication with Hasura + Firebase
 - [ ] Deploy in production
 
