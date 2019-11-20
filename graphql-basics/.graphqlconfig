@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "graphql-basics": {
+      "schemaPath": "generated/schema.graphql",
+      "includes": ["src/graphql/**/*.graphql",  "**/*.gql"],
+      "graphqlForVSCode.nodePath": "ui/node_modules"
+      "extensions": {
+        "endpoints": {
+          "prod": "http://localhost:4000"
+        }
+      }
+    }
+  }
+}

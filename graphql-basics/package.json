@@ -1,21 +1,32 @@
 {
-  "name": "graphql-basics",
-  "version": "1.0.0",
-  "description": "GraphQL basics",
-  "main": "src/index.js",
-  "author": "mfcarneiro <matheus.felipe123@gmail.com>",
-  "license": "MIT",
-  "scripts": {
-    "serve": "nodemon src/index.js --exec babel-node --ext js, gql"
-  },
-  "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "graphql-yoga": "^1.18.3"
-  },
-  "devDependencies": {
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "nodemon": "^1.19.4",
-    "uuid": "^3.3.3"
-  }
+	"name": "graphql-basics",
+	"version": "1.0.0",
+	"description": "GraphQL basics",
+	"main": "src/index.js",
+	"author": "mfcarneiro <matheus.felipe123@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"serve": "nodemon src/index.js --ext js, graphql --exec babel-node"
+	},
+	"dependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-plugin-transform-object-rest-spread": "^6.26.0",
+		"babel-preset-env": "^1.7.0",
+		"graphql": "^14.5.8",
+		"graphql-import": "^0.7.1",
+		"graphql-tools": "^4.0.6",
+		"graphql-yoga": "^1.18.3",
+		"uuid": "^3.3.3"
+	},
+	"devDependencies": {
+		"nodemon": "^1.17.5"
+	},
+	"prettier": {
+		"quoteProps": "as-needed",
+		"singleQuote": true,
+		"arrowParens": "avoid",
+		"endOfLine": "auto",
+		"tabWidth": 2,
+		"useTabs": true
+	}
 }
