@@ -9,8 +9,6 @@
 - [ ] Pagination and sorting
 - [X] Apollo Client
 - [ ] Testing with Jest
-- [ ] Authentication with Hasura + Firebase
-- [ ] Deploy in production
 
 ---
 
@@ -19,16 +17,9 @@
 - Vue
 - Quasar-Framework
 
-### Mobile
-
-- Flutter
-
 ---
 
 ### Sample projects
-
-- Flutter
-  - TBD
   
 - Quasar-Framework
   - TBD
